@@ -3,7 +3,7 @@
 pkg_name=vannav
 pkg_arch=amd64
 pkg_version=1.12.2
-pkg_release=2
+pkg_release=3
 pkg_maintainer="Wenger Binning <Wengerbinning@gmail.com>"
 
 src=./
@@ -15,7 +15,6 @@ mkdir -p $dst
 #
 install -m 755 -d $dst/usr/bin
 install -m 755 -t $dst/usr/bin $src/nav
-install -m 755 -d $dst/srv/vannav
 install -m 755 -d $dst/etc/systemd/system
 install -m 655 -t $dst/etc/systemd/system $src/vannav.service
 install -m 755 -d $dst/DEBIAN
