@@ -10,8 +10,6 @@ ExecStart=/usr/bin/nav --addr 127.0.0.1 --port 3000
 Restart=on-abnormal
 RestartSec=5s
 KillMode=mixed
-StandardOutput=null
-StandardError=syslog
 
 [Install]
 WantedBy=multi-user.target
